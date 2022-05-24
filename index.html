@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Aula 09 - CSS</title>
+</head>
+<body>
+    <h1>A importância do Flex!</h1>
+    <p>O bom uso da estilização pode tornar a experiência do usuário muito mais agradável ao visitar a sua página e fazer com que ele volte, ou permaça nela consumindo seu conteúdo.
+    Por outro lado, quando não levamos em consideração questões importantes com o tamanho de telas diferentes, estamos arriscando fazer com que o usuário desista de nossa página.
+    A responsividade é um assunto que deve ser levado muito a sério para um bom desenvolvedor web e é um tema muito vasto e complexo.
+    Para iniciantes nessa área, uma boa maneira de começar a considerar essa questão é na questão da quebra da página ao se reduzir o tamanho da tela do navegador.
+    O display-flex é uma propriedade muito útil a qualquer desenvolvedor web pois permite alterar o comportamento de elementos que inicialmente não são em linha e colocá-los lado a lado. 
+    Essa funcionalidade é muito boa, mas será que deixar os elementos sempre lado a lado, independente do usuário diminuir o o espaço da tela é sempre interessante?
+    <h2>Vejamos algumas possibilidades que o display flex nos permite de quebra de linha com os 10 filmes mais da NETFLIX Brasil de hoje:</h2>
+    <h3 class="tipo-wrap">FLEX-WRAP: NOWRAP</h3>
+    <div id="cards-no">
+        <div class="card">
+            <img src="https://dnm.nflximg.net/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABekR3y2U8EPrmju5dSf5Ehjxv03v9RSDd2amdoIondfkINFqBAyfxLBirIXa03uJ8CezAdCd_IH7YXuGBPkPVj6v-6USmWViwZIZFMliWMDZzg2UKijuPhnknQ81OCICuAtIig.jpg?r=dc3" alt="De volta ao Baile" style="width:100%">
+            <div class="container">
+                <h4>1º Lugar</h4>
+                <p>De volta ao Baile</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://dnm.nflximg.net/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABeR9n_JN15nPRiE0PX9E9ZB_p3xOvSCVsSd9NgDxQXKaMtCmLdc2VE9HracUJnA-iHGfdEoR72WcpDRFhMiDMJwLicU46Us-DsHvjljNsJwpqbrmFfj4gLIxxKxyQ_FY72sGNg.jpg?r=31e" alt="Os opostos sempre se atraem" style="width:100%">
+            <div class="container">
+                <h4>2º Lugar</h4>
+                <p>Os opostos sempre se atraem</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://dnm.nflximg.net/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABSBOo7MKtZMQ65V2m63AF6Kd8-bcXqSs7Wfml3hl7z8XUuEQoq6480OO0FYgTP2zcxu-8RpGRP2K1zWvMnJAJZEsDJ8hqpQFm0IIqF2JZqsm3TNGfOdA1V8LMD-pHdhscg1XOQ.jpg?r=9b7" alt="A família perfeita" style="width:100%">
+            <div class="container">
+                <h4>3º Lugar</h4>
+                <p>A família perfeita</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://dnm.nflximg.net/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABb8f1xt5hHrD64WQ7pE99E4BJ5t2N250In6WmYw69_aPj4I6Pbu5AEmuyGySZQapixrgFqt2-QxTc5y2upmjg9hwZBLkqpSNEvf3qiN9dbzsTFLVhAe9YscKOHwxiCwXPwzuwg.jpg?r=82e" alt="Marmaduke" style="width:100%">
+            <div class="container">
+                <h4>4º Lugar</h4>
+                <p>Marmaduke</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://dnm.nflximg.net/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABVz3EXL63yzLD5VhcCma_FSSvylSwrr5hgqwQIJX15lWXdoUpeH3zwvexY_VQJextuVZJtvW8iEMQaR07b_g-1woiFTpr1ISj6Mh.jpg?r=14c" alt="Sonic - O Filme" style="width:100%">
+            <div class="container">
+                <h4>5º Lugar</h4>
+                <p>Sonic - O filme</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://dnm.nflximg.net/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABaMjpgKA5MCiG3Qt2S3aWYeUHkASGtxhi11RYUZ6vtR5m--1V5th2CgBd28HauBF0ZJooO4ihgQQ4lDnL92WXGzMxVFz2YlwSnW2VphjsgqdMmydIJcLieVkS5T8nPLmVjrzqg.jpg?r=092" alt="O Soldado que não existiu" style="width:100%">
+            <div class="container">
+                <h4>6º Lugar</h4>
+                <p>O Soldado que não existiu</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://dnm.nflximg.net/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABXNLabtVtkK3i5bSK32g-MZqI2oOx1-E0PN-SYu5Vn1ztVE62a0y-FtcDlM_aFhdZZmS_XHGx-YiDgB6tzwUDn_iKqPRxw8rEhbj56V4r-0GE3REVKOf1Xj23WVr3S7QkhgS_A.jpg?r=a37" alt="A caminho do verão" style="width:100%">
+            <div class="container">
+                <h4>7º Lugar</h4>
+                <p>A caminho do verão</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://dnm.nflximg.net/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABWQRI9XKD03plKiwfChWCiRtb_iD3rSCyjxs5IyYRuxItfi9RjqD7e1RyQiY9wDNfn9drnmUjzsVINF5kfxme7nCFe9E0EifERScZ6zKAyiwMGt0x-tKe99eWN43_J4DRGeSOA.jpg?r=46d" alt="365 dias- Hoje" style="width:100%">
+            <div class="container">
+                <h4>8º Lugar</h4>
+                <p>365 dias- Hoje</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://dnm.nflximg.net/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABdjKfC0jxRbowCni7kXm3yk2EOZ_IgUiE8dCDysPyO7FJKSrrCPuUeUBOAdLSQjBvDgrtpFQnx8vS7dB02WXxfu7auAWqtMbFOJQ.jpg?r=849" alt="MIB - Homens de Preto" style="width:100%">
+            <div class="container">
+                <h4>9º Lugar</h4>
+                <p>MIB - Homens de Preto</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://dnm.nflximg.net/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABWDUcyq7Z7SwMiyceEr1TWqWhXeLk0oWWhARuoT3AGAPTXNCtod8RuW-HSE-fdfGxave-1NHA9I0teuf0frFHvrQ-ZkzVp2qnje6.jpg?r=341" alt="A Salvação" style="width:100%">
+            <div class="container">
+                <h4>10º Lugar</h4>
+                <p>A Salvação</p>
+            </div>
+        </div>
+
+    </div>
+    <br>
+    <h3>Como veremos abaixo, o display-flex deixa os elementos em linha e por padrão não há quebra de linha automática, ele tenta juntar os elementos até que não é mais possivel e os elementos da ponta passam a ser ocultados.</h3>
+    <br>
+    <div class="img-reduz">
+        <img src="./display-flex.png"  alt="Visao tela menor">
+        <img src="./display-flex2.png" alt="elementos ocultados">
+    </div>
+
+    <hr>
+    <h3 class="tipo-wrap">FLEX-WRAP-WRAP</h3>
+    <div id="cards-wrap">
+        <div class="card">
+            <img src="https://dnm.nflximg.net/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABekR3y2U8EPrmju5dSf5Ehjxv03v9RSDd2amdoIondfkINFqBAyfxLBirIXa03uJ8CezAdCd_IH7YXuGBPkPVj6v-6USmWViwZIZFMliWMDZzg2UKijuPhnknQ81OCICuAtIig.jpg?r=dc3" alt="De volta ao Baile" style="width:100%">
+            <div class="container">
+                <h4>1º Lugar</h4>
+                <p>De volta ao Baile</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://dnm.nflximg.net/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABeR9n_JN15nPRiE0PX9E9ZB_p3xOvSCVsSd9NgDxQXKaMtCmLdc2VE9HracUJnA-iHGfdEoR72WcpDRFhMiDMJwLicU46Us-DsHvjljNsJwpqbrmFfj4gLIxxKxyQ_FY72sGNg.jpg?r=31e" alt="Os opostos sempre se atraem" style="width:100%">
+            <div class="container">
+                <h4>2º Lugar</h4>
+                <p>Os opostos sempre se atraem</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://dnm.nflximg.net/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABSBOo7MKtZMQ65V2m63AF6Kd8-bcXqSs7Wfml3hl7z8XUuEQoq6480OO0FYgTP2zcxu-8RpGRP2K1zWvMnJAJZEsDJ8hqpQFm0IIqF2JZqsm3TNGfOdA1V8LMD-pHdhscg1XOQ.jpg?r=9b7" alt="A família perfeita" style="width:100%">
+            <div class="container">
+                <h4>3º Lugar</h4>
+                <p>A família perfeita</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://dnm.nflximg.net/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABb8f1xt5hHrD64WQ7pE99E4BJ5t2N250In6WmYw69_aPj4I6Pbu5AEmuyGySZQapixrgFqt2-QxTc5y2upmjg9hwZBLkqpSNEvf3qiN9dbzsTFLVhAe9YscKOHwxiCwXPwzuwg.jpg?r=82e" alt="Marmaduke" style="width:100%">
+            <div class="container">
+                <h4>4º Lugar</h4>
+                <p>Marmaduke</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://dnm.nflximg.net/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABVz3EXL63yzLD5VhcCma_FSSvylSwrr5hgqwQIJX15lWXdoUpeH3zwvexY_VQJextuVZJtvW8iEMQaR07b_g-1woiFTpr1ISj6Mh.jpg?r=14c" alt="Sonic - O Filme" style="width:100%">
+            <div class="container">
+                <h4>5º Lugar</h4>
+                <p>Sonic - O filme</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://dnm.nflximg.net/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABaMjpgKA5MCiG3Qt2S3aWYeUHkASGtxhi11RYUZ6vtR5m--1V5th2CgBd28HauBF0ZJooO4ihgQQ4lDnL92WXGzMxVFz2YlwSnW2VphjsgqdMmydIJcLieVkS5T8nPLmVjrzqg.jpg?r=092" alt="O Soldado que não existiu" style="width:100%">
+            <div class="container">
+                <h4>6º Lugar</h4>
+                <p>O Soldado que não existiu</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://dnm.nflximg.net/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABXNLabtVtkK3i5bSK32g-MZqI2oOx1-E0PN-SYu5Vn1ztVE62a0y-FtcDlM_aFhdZZmS_XHGx-YiDgB6tzwUDn_iKqPRxw8rEhbj56V4r-0GE3REVKOf1Xj23WVr3S7QkhgS_A.jpg?r=a37" alt="A caminho do verão" style="width:100%">
+            <div class="container">
+                <h4>7º Lugar</h4>
+                <p>A caminho do verão</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://dnm.nflximg.net/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABWQRI9XKD03plKiwfChWCiRtb_iD3rSCyjxs5IyYRuxItfi9RjqD7e1RyQiY9wDNfn9drnmUjzsVINF5kfxme7nCFe9E0EifERScZ6zKAyiwMGt0x-tKe99eWN43_J4DRGeSOA.jpg?r=46d" alt="365 dias- Hoje" style="width:100%">
+            <div class="container">
+                <h4>8º Lugar</h4>
+                <p>365 dias- Hoje</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://dnm.nflximg.net/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABdjKfC0jxRbowCni7kXm3yk2EOZ_IgUiE8dCDysPyO7FJKSrrCPuUeUBOAdLSQjBvDgrtpFQnx8vS7dB02WXxfu7auAWqtMbFOJQ.jpg?r=849" alt="MIB - Homens de Preto" style="width:100%">
+            <div class="container">
+                <h4>9º Lugar</h4>
+                <p>MIB - Homens de Preto</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://dnm.nflximg.net/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABWDUcyq7Z7SwMiyceEr1TWqWhXeLk0oWWhARuoT3AGAPTXNCtod8RuW-HSE-fdfGxave-1NHA9I0teuf0frFHvrQ-ZkzVp2qnje6.jpg?r=341" alt="A Salvação" style="width:100%">
+            <div class="container">
+                <h4>10º Lugar</h4>
+                <p>A Salvação</p>
+            </div>
+        </div>
+
+    </div>
+    <br>
+    <h3>Inicialmente não vemos diferença porque os elementos estão ocupando todo o espaço da tela, mas ao se diminuir a tela, percebe-se o quanto a quebra de linha torna o elemento mais visível mesmo com a redução lateral do espaço.</h3>
+    <br>
+    <div class="img-reduz">
+        <img src="./wrap1.png" width="60%" height="60%" alt="Visao tela menor">
+        <img src="./wrap2.png" alt="elementos ocultados">
+    </div>
+    <hr>
+    <h3 class="tipo-wrap">FLEX-WRAP-WRAP-REVERSE</h3>
+    <div id="cards-wrap-rev">
+        <div class="card">
+            <img src="https://dnm.nflximg.net/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABekR3y2U8EPrmju5dSf5Ehjxv03v9RSDd2amdoIondfkINFqBAyfxLBirIXa03uJ8CezAdCd_IH7YXuGBPkPVj6v-6USmWViwZIZFMliWMDZzg2UKijuPhnknQ81OCICuAtIig.jpg?r=dc3" alt="De volta ao Baile" style="width:100%">
+            <div class="container">
+                <h4>1º Lugar</h4>
+                <p>De volta ao Baile</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://dnm.nflximg.net/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABeR9n_JN15nPRiE0PX9E9ZB_p3xOvSCVsSd9NgDxQXKaMtCmLdc2VE9HracUJnA-iHGfdEoR72WcpDRFhMiDMJwLicU46Us-DsHvjljNsJwpqbrmFfj4gLIxxKxyQ_FY72sGNg.jpg?r=31e" alt="Os opostos sempre se atraem" style="width:100%">
+            <div class="container">
+                <h4>2º Lugar</h4>
+                <p>Os opostos sempre se atraem</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://dnm.nflximg.net/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABSBOo7MKtZMQ65V2m63AF6Kd8-bcXqSs7Wfml3hl7z8XUuEQoq6480OO0FYgTP2zcxu-8RpGRP2K1zWvMnJAJZEsDJ8hqpQFm0IIqF2JZqsm3TNGfOdA1V8LMD-pHdhscg1XOQ.jpg?r=9b7" alt="A família perfeita" style="width:100%">
+            <div class="container">
+                <h4>3º Lugar</h4>
+                <p>A família perfeita</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://dnm.nflximg.net/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABb8f1xt5hHrD64WQ7pE99E4BJ5t2N250In6WmYw69_aPj4I6Pbu5AEmuyGySZQapixrgFqt2-QxTc5y2upmjg9hwZBLkqpSNEvf3qiN9dbzsTFLVhAe9YscKOHwxiCwXPwzuwg.jpg?r=82e" alt="Marmaduke" style="width:100%">
+            <div class="container">
+                <h4>4º Lugar</h4>
+                <p>Marmaduke</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://dnm.nflximg.net/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABVz3EXL63yzLD5VhcCma_FSSvylSwrr5hgqwQIJX15lWXdoUpeH3zwvexY_VQJextuVZJtvW8iEMQaR07b_g-1woiFTpr1ISj6Mh.jpg?r=14c" alt="Sonic - O Filme" style="width:100%">
+            <div class="container">
+                <h4>5º Lugar</h4>
+                <p>Sonic - O filme</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://dnm.nflximg.net/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABaMjpgKA5MCiG3Qt2S3aWYeUHkASGtxhi11RYUZ6vtR5m--1V5th2CgBd28HauBF0ZJooO4ihgQQ4lDnL92WXGzMxVFz2YlwSnW2VphjsgqdMmydIJcLieVkS5T8nPLmVjrzqg.jpg?r=092" alt="O Soldado que não existiu" style="width:100%">
+            <div class="container">
+                <h4>6º Lugar</h4>
+                <p>O Soldado que não existiu</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://dnm.nflximg.net/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABXNLabtVtkK3i5bSK32g-MZqI2oOx1-E0PN-SYu5Vn1ztVE62a0y-FtcDlM_aFhdZZmS_XHGx-YiDgB6tzwUDn_iKqPRxw8rEhbj56V4r-0GE3REVKOf1Xj23WVr3S7QkhgS_A.jpg?r=a37" alt="A caminho do verão" style="width:100%">
+            <div class="container">
+                <h4>7º Lugar</h4>
+                <p>A caminho do verão</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://dnm.nflximg.net/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABWQRI9XKD03plKiwfChWCiRtb_iD3rSCyjxs5IyYRuxItfi9RjqD7e1RyQiY9wDNfn9drnmUjzsVINF5kfxme7nCFe9E0EifERScZ6zKAyiwMGt0x-tKe99eWN43_J4DRGeSOA.jpg?r=46d" alt="365 dias- Hoje" style="width:100%">
+            <div class="container">
+                <h4>8º Lugar</h4>
+                <p>365 dias- Hoje</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://dnm.nflximg.net/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABdjKfC0jxRbowCni7kXm3yk2EOZ_IgUiE8dCDysPyO7FJKSrrCPuUeUBOAdLSQjBvDgrtpFQnx8vS7dB02WXxfu7auAWqtMbFOJQ.jpg?r=849" alt="MIB - Homens de Preto" style="width:100%">
+            <div class="container">
+                <h4>9º Lugar</h4>
+                <p>MIB - Homens de Preto</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://dnm.nflximg.net/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABWDUcyq7Z7SwMiyceEr1TWqWhXeLk0oWWhARuoT3AGAPTXNCtod8RuW-HSE-fdfGxave-1NHA9I0teuf0frFHvrQ-ZkzVp2qnje6.jpg?r=341" alt="A Salvação" style="width:100%">
+            <div class="container">
+                <h4>10º Lugar</h4>
+                <p>A Salvação</p>
+            </div>
+        </div>
+
+    </div>
+    <br>
+    <h3>Assim como no wrap, há a quebra de linha quando necessário mas dessa vez, os elementos seguem em direção inversa ao que nos parece intuitivo.</h3>
+    <br>
+    <div class="img-reduz">
+        <img src="./wraprev1.png" width="60%" height="60%" alt="Visao tela menor">
+        <img src="./wraprev2.png" alt="elementos ocultados">
+    </div>
+
+
+
+
+</body>
+</html>
